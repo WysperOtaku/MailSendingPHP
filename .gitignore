@@ -3,3 +3,6 @@
 
 # Configuración de VS Code
 .vscode/
+
+# Referencia
+/refer.php

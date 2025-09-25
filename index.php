@@ -1,3 +1,4 @@
 <?php
-echo "Hello World!";
+    require_once('conf.php');
+    require_once('app/view/form.php');
 ?>
