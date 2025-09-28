@@ -1,0 +1,20 @@
+<?php
+require_once __DIR__ . "../../model/Mail.php";
+require_once __DIR__ .  "../../services/Mailer.php";
+
+class MailController {
+    public function procesarFormulario(array $datos): ?string {
+        try {
+            $mail = new Mail($datos['name'], $datos['email'], $datos['msg']);
+        }
+        catch (Exception $e) {
+            return $e->getMessage();
+        }
+        // TODO: Guardar en el historial de la bbdd -> a futuro
+
+        //Mandar el mail-->>
+        return "Email enviado!";
+    }
+}
+
+?>

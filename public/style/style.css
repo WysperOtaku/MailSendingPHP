@@ -50,3 +50,11 @@ textarea{
 	resize:none;
 	display:block;
 }
+
+form button {
+	display: block;
+}
+
+form output {
+	display: block;
+}

@@ -5,10 +5,31 @@
         private string $msg;
 
         public function __construct(string $nombre, string $email, string $msg) {
-            if (self::isEmailValid($email)) throw new InvalidArgumentException("Email invalido");
+            $errorMsg = "Error: ";
+            $errorOccurred = false;
+
+            if (!self::isEmailValid($email)) {
+                $errorMsg .= "Email invalido <br>";
+                $errorOccurred = true;
+            }
+
+            if (empty($nombre)) {
+                 $errorMsg .= "Nombre vacio <br>";
+                 $errorOccurred = true;
+            }
+
+            if (empty($msg)) {
+                $errorMsg .= "Mensaje vacio <br>";
+                $errorOccurred = true;
+            }
+
+            if ($errorOccurred) {
+                throw new InvalidArgumentException($errorMsg);
+            }
+
             $this->email = $email;
-            $this->nombre = (!empty($nombre)) ? $nombre :  throw new InvalidArgumentException("Empty name");
-            $this->msg = (!empty($msg)) ? $msg :  throw new InvalidArgumentException("Empty message");
+            $this->nombre = $nombre;
+            $this->msg = $msg;
         }
 
         /**
