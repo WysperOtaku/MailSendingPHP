@@ -149,3 +149,4 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 ## Contribución
 
 Las contribuciones son bienvenidas. Por favor, abre un issue o crea un pull request para mejoras o correcciones.
+*Hecho con dolor y mucha tryhardeada por Wysper*
