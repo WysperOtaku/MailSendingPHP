@@ -5,13 +5,6 @@ Sistema de envío de correos electrónicos usando PHPMailer con una interfaz web
 ## Requisitos del Sistema
 
 - **PHP**: 5.5.0 o superior (recomendado PHP 8.0+)
-- **Extensiones PHP requeridas**:
-  - `ext-ctype`
-  - `ext-filter` 
-  - `ext-hash`
-- **Extensiones PHP recomendadas**:
-  - `ext-mbstring` (para codificación multibyte)
-  - `ext-openssl` (para SMTP seguro y firmas DKIM)
 - **Composer** para gestión de dependencias
 
 ## Instalación
